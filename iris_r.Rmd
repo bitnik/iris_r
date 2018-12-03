@@ -1,0 +1,22 @@
+```{r}
+# iris dataset already exists in r
+head(iris)
+```
+
+```{r}
+summary(iris)
+```
+
+# Plot comparison of sepal and petal length of  species (with ggplot2)
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+ggplot(iris, aes(Sepal.Length, Sepal.Width, colour=Species)) + geom_point() + ggtitle("Compare sepal length")
+```
+
+```{r}
+ggplot(iris, aes(Petal.Length, Petal.Width, colour=Species)) + geom_point() + ggtitle("Compare petal length")
+```
